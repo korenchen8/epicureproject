@@ -6,7 +6,6 @@ function App() {
     return (
     <div >
       <Header />
-      {/* Rest of your page content will go here */}
     </div>
   );
   

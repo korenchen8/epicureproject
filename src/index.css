@@ -1,11 +1,51 @@
-/* Reset default browser styles */
+:root {
+  
+  --black: #000000;
+  --grey: #979797;
+
+
+  --light-beige: #F9F4EA;
+  --gold: #E19D1A;
+  --off-white: #FAFAFA;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+h1 {
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 1.1;
+  color: var(--black);
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+}
+
+button {
+  font-family: inherit; 
+}
+
 body, html {
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-height: 100vh;
+  box-sizing: border-box;
 }
-
 #root {
   width: 100%;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden; 
 }
