@@ -40,7 +40,7 @@ function Header() {
    
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
-          <button onClick={() => setIsMenuOpen(false)} className={styles.closeBtn}><img src="/assets/icons/x-icon.svg" alt="shopping bag"/></button>
+          <button onClick={() => setIsMenuOpen(false)} className={styles.closeBtn}><img src="/assets/icons/x-icon.svg" alt="Close menu"/></button>
           <nav>
             <ul>
               <li>Restaurants</li>
