@@ -1,5 +1,5 @@
 
-import type { IChef, IDish, IRestaurant } from "./types/interfaces";
+import type { IChef, IDish, IRestaurant } from "../types/interfaces";
 
 export const mockDishes: IDish[] = [
   {
@@ -56,6 +56,33 @@ export const mockRestaurants: IRestaurant[] = [
     dishes: ["d3"],
     isPopular: true,
   },
+  {
+    id: "r4",
+    name: "Onza",
+    chef: "Yossi Shitrit",
+    rating: 4,
+    image: "/assets/restaurants/onza.svg",
+    dishes: ["d3"],
+    isPopular: true,
+  },
+  {
+    id: "r5",
+    name: "Kitchen Market",
+    chef: "Yossi Shitrit",
+    rating: 4,
+    image: "/assets/restaurants/kitchen-market.svg",
+    dishes: ["d3"],
+    isPopular: true,
+  },
+  {
+    id: "r6",
+    name: "Mashya",
+    chef: "Yossi Shitrit",
+    rating: 4,
+    image: "/assets/restaurants/mashya.svg",
+    dishes: ["d3"],
+    isPopular: true,
+  },
 ];
 
 export const mockChefs: IChef[] = [
@@ -64,7 +91,7 @@ export const mockChefs: IChef[] = [
     name: "Yossi Shitrit",
     description: "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.",
     image: "/assets/chefs/yossishitrit.svg",
-    restaurantIds: ["r1"],
+    restaurantIds: ["r4", "r5", "r6"],
     isChefOfTheWeek: true,
   }
 ];
