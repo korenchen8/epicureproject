@@ -11,9 +11,9 @@ export interface IRestaurant {
   id: string;
   name: string;
   chef: string;
-  rating: number; // 1-5
+  rating: number; 
   image: string;
-  dishes: string[]; // IDs of dishes belonging to this restaurant
+  dishes: string[]; 
   isPopular?: boolean;
 }
 
@@ -22,6 +22,6 @@ export interface IChef {
   name: string;
   description: string;
   image: string;
-  restaurantIds: string[]; // IDs of restaurants owned by this chef
+  restaurantIds: string[]; 
   isChefOfTheWeek?: boolean;
 }

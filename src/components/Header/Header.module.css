@@ -1,0 +1,180 @@
+.headerContainer {
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--off-white);
+  position: relative;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--white);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 12px;
+}
+
+.desktopNav,
+.logoText,
+.desktopSearch {
+  display: none;
+}
+
+.logo {
+  height: 24px;
+  width: auto;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.hamburgerBtn,
+.iconBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 1001;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.closeBtn {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.mobileMenu nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.mobileMenu nav li {
+  color: var(--black);
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 24px;
+  letter-spacing: 1.92px;
+}
+
+
+@media (min-width: 1024px) {
+  .headerContainer {
+    border-bottom: 1px solid var(--off-white);
+    height: 64px;
+    padding: 0 40px;
+    justify-content: space-between;
+    position: static;
+    background-color: var(--off-white);
+  }
+
+  .leftSection {
+    gap: 32px;
+  }
+
+  .logoSection {
+    position: static;
+    transform: none;
+    left: auto;
+    margin-right: 32px;
+  }
+
+  .hamburgerBtn {
+    display: none;
+  }
+
+  .iconBtn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+
+  }
+
+  .logoSection {
+    margin-right: 32px;
+    margin-top: 14px;
+  }
+
+  .logoText {
+    display: inline;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    color: var(--black);
+  }
+
+  .desktopNav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .navLink {
+    margin-top: 14px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 1.92px;
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
+  .logo {
+    height: 32px;
+  }
+
+  .rightSection {
+    gap: 16px;
+  }
+}
