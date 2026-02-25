@@ -1,73 +1,85 @@
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 80px 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 80px;
 }
 
 .sectionTitle {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 24px;
-  font-weight: 200;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 35px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    text-align: center;
 }
 
 .upperContent {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  margin-bottom: 80px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    text-align: justify;
+    justify-content: center;
 }
 
 .imageWrapper {
-  position: relative;
-  flex: 1;
-  max-width: 600px;
+    position: relative;
+  width: 478px; 
+  height: 372px; 
+  overflow: hidden; 
 }
 
 .chefImg {
-  width: 100%;
-  height: auto;
+    width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover; 
+  object-position: center; 
 }
 
 .nameOverlay {
-  position: absolute;
+    position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 15px;
+  width: 100%;
+  background: #FFFFFFCC;
+  padding: 15px 0;
   text-align: center;
-  font-size: 24px;
   font-family: "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2.67px;
+  line-height: 47px;
+  font-weight: 400;
 }
 
 .description {
-  flex: 1;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  line-height: 1.8;
-  font-weight: 200;
-  white-space: pre-line; 
+    flex: 1;
+    max-width: 642px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 1.25px;
+    font-weight: 200;
+    text-align: justify;
 }
 
 .subTitle {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 24px;
-  font-weight: 200;
-  margin-bottom: 40px;
-  text-transform: uppercase;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 .restaurantsGrid {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scrollbar-width: none;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .restaurantsGrid::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
