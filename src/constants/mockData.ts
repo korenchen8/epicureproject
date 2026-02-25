@@ -81,7 +81,7 @@ export const mockRestaurants: IRestaurant[] = [
     rating: 4,
     image: "/assets/restaurants/mashya.svg",
     dishes: ["d3"],
-    isPopular: true,
+    isPopular: false,
   },
 ];
 
