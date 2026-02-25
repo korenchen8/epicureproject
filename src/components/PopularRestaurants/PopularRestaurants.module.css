@@ -1,0 +1,16 @@
+.popularRestaurantsContainer {
+  margin: 40px 0;
+}
+.sectionLabel {
+  width: 326px;
+  height: 24px;
+  top:367px;
+  left: 20px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: var(--black);
+  line-height: 24px;
+   text-transform: uppercase;
+  letter-spacing: 1.25px;
+}
