@@ -1,0 +1,129 @@
+
+ .container {
+  background-color: var(--off-white);
+  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+
+.logoSide {
+  order: 1; 
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.bigLogo {
+  width: 102px; 
+  height: auto;
+  display: block;
+}
+
+.buttonContainer {
+  order: 2; 
+  display: flex;
+  flex-direction: row; 
+  gap: 16px;
+  width: 100%;
+}
+
+.storeButton {
+  height: 30px; 
+  width: auto;
+}
+
+.textSide {
+  order: 3; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: none; 
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 200;
+  color: #000000;
+  margin: 0;
+  white-space: pre-line;
+  text-align: left;
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 80px 0;
+  }
+
+  .content {
+    flex-direction: row; 
+    padding: 0 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .textSide {
+    order: 1; 
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .title {
+    display: block; 
+    font-size: 30px;
+    letter-spacing: 2.14px;
+    margin-bottom: 24px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .buttonContainer {
+    order: 2; 
+    width: 376px;
+    height: 52px;
+  }
+
+  .storeButton {
+    height: 100%;
+  }
+
+  .logoSide {
+    order: 3; 
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center; 
+    margin-top: 120px;
+
+  }
+
+  .bigLogo {
+    width: 178px; 
+    height: auto;
+    display: block;
+  }
+}

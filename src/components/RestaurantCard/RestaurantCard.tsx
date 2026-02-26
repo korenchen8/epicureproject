@@ -31,18 +31,6 @@ function RestaurantCard({ image, name, chef, rating=0, isChefSection=false }: Re
             </div>
           </>
         )}
-
-        {/* <p className={styles.cardChef}>{chef}</p>
-        <div className={styles.rating}>
-          {stars.map((isFull, index) => (
-            <img 
-              key={index} 
-              src={isFull ? "/assets/icons/star.svg" : "/assets/icons/empty-star.png"}
-              alt="star" 
-              className={styles.star} 
-            />
-          ))}
-        </div> */}
       </div>
     </div>
   );
