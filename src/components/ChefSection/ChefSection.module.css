@@ -1,13 +1,12 @@
-
- .container {
+.container {
     width: 100%;
     margin: 0 auto;
-    padding: 40px 20px; 
+    padding: 40px 20px;
 }
 
 .sectionTitle {
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 18px; 
+    font-size: 18px;
     font-weight: 200;
     margin-bottom: 24px;
     text-transform: uppercase;
@@ -17,7 +16,7 @@
 
 .upperContent {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 24px;
     align-items: center;
     margin-bottom: 40px;
@@ -25,18 +24,18 @@
 
 .imageWrapper {
     position: relative;
-    width: 100%; 
-    max-width: 478px; 
+    width: 100%;
+    max-width: 478px;
     height: auto;
-    aspect-ratio: 478 / 372; 
-    overflow: hidden; 
+    aspect-ratio: 478 / 372;
+    overflow: hidden;
 }
 
 .chefImg {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .nameOverlay {
@@ -48,7 +47,7 @@
     padding: 10px 0;
     text-align: center;
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 24px; 
+    font-size: 24px;
     letter-spacing: 2px;
     font-weight: 400;
 }
@@ -56,10 +55,10 @@
 .description {
     width: 100%;
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 16px; 
+    font-size: 16px;
     line-height: 1.6;
     font-weight: 200;
-    text-align: left; 
+    text-align: left;
     margin-top: 0;
 }
 
@@ -77,6 +76,24 @@
     text-transform: uppercase;
 }
 
+.allRestaurantsButton {
+
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 24px;
+    padding-left: 0;
+}
+
 .restaurantsGrid {
     display: flex;
     gap: 16px;
@@ -92,26 +109,51 @@
 
 
 @media (min-width: 1024px) {
-    .container { padding: 80px; max-width: 1440px; }
-    .sectionTitle { font-size: 30px; margin-bottom: 40px; }
-    
-    .upperContent { 
-        flex-direction: row; 
+    .container {
+        padding: 80px;
+        max-width: 1440px;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .allRestaurantsButton {
+        display: none;
+    }
+
+    .upperContent {
+        flex-direction: row;
         align-items: flex-start;
-        gap: 40px; 
-        margin-bottom: 80px; 
+        gap: 40px;
+        margin-bottom: 80px;
         justify-content: center;
     }
-    
-    .imageWrapper { width: 478px; height: 372px; }
-    .nameOverlay { font-size: 40px; padding: 15px 0; }
-    .description { 
-        font-size: 24px; 
-        max-width: 642px; 
-        letter-spacing: 1.25px;
-        text-align: justify; 
+
+    .imageWrapper {
+        width: 478px;
+        height: 372px;
     }
-    
-    .lowerContent { padding-left: 60px; margin-bottom: 80px; }
-    .subTitle { font-size: 24px; }
+
+    .nameOverlay {
+        font-size: 40px;
+        padding: 15px 0;
+    }
+
+    .description {
+        font-size: 24px;
+        max-width: 642px;
+        letter-spacing: 1.25px;
+        text-align: justify;
+    }
+
+    .lowerContent {
+        padding-left: 60px;
+        margin-bottom: 80px;
+    }
+
+    .subTitle {
+        font-size: 24px;
+    }
 }
