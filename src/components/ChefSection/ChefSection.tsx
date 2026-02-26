@@ -2,13 +2,20 @@ import styles from "./ChefSection.module.css";
 import { ChefSectionStrings } from "./ChefSection.strings";
 import {mockRestaurants, mockChefs} from "../../constants/mockData";
 import RestaurantCard from "../RestaurantCard/RestaurantCard";
+import { useMemo } from "react";
 
 function ChefSection() {
-    const chefOfTheWeek = mockChefs.find(chef => chef.isChefOfTheWeek); 
-    const chefRestaurants = mockRestaurants.filter(res => 
-    chefOfTheWeek?.restaurantIds.includes(res.id)
-  );
+  const chefOfTheWeek = useMemo(() => {
+        return mockChefs.find(chef => chef.isChefOfTheWeek);
+    }, []);
+    const chefRestaurants = useMemo(() => {
+        if (!chefOfTheWeek) return [];
+        return mockRestaurants.filter(res => 
+            chefOfTheWeek.restaurantIds.includes(res.id)
+        );
+    }, [chefOfTheWeek]);
   if (!chefOfTheWeek) return null;
+
   return (
     <section className={styles.container}>
       <h2 className={styles.sectionTitle}>{ChefSectionStrings.CHEF_SECTION_LABEL}</h2>
@@ -38,8 +45,6 @@ function ChefSection() {
               key={res.id}
               image={res.image}
               name={res.name}
-              chef={res.chef}
-              rating={res.rating}
               isChefSection={true}
             />
           ))}
