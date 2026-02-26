@@ -8,7 +8,10 @@ function AboutUs() {
                 <div className={styles.textSide}>
                     <h2 className={styles.title}>{AboutUsStrings.ABOUT_US_LABEL}</h2>
                     <p className={styles.description}>
-                        {AboutUsStrings.ABOUT_US_DESCRIPTION}
+                        {AboutUsStrings.ABOUT_US_DESCRIPTION_PARAGRAPH_1}
+                    </p>
+                    <p className={styles.description}>
+                        {AboutUsStrings.ABOUT_US_DESCRIPTION_PARAGRAPH_2}
                     </p>
                     <div className={styles.buttonContainer}>
                         <img src="/assets/icons/apple-store.svg" alt="App Store" />
