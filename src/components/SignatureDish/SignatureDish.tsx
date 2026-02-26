@@ -20,6 +20,9 @@ function SignatureDish() {
                     />
                 ))}
             </div>
+            <button className={styles.allRestaurantsButton}>
+                {SignatureDishStrings.DISH_BUTTON_LABEL}
+            </button>
         </section>
     );
 }

@@ -29,10 +29,29 @@
   padding: 20px 0;
   scrollbar-width: none;
 }
+.allRestaurantsButton {
+  align-self: flex-start; 
+  padding-left: 20px;
+  margin-top: 20px;
+  
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 
 @media (min-width: 1024px) {
   .signatureDishContainer { padding-top: 80px; }
   .sectionLabel { font-size: 30px; }
+  .allRestaurantsButton {
+    display: none; 
+  }
   .cardsWrapper { 
     margin-top: 80px;
     justify-content: center; 
