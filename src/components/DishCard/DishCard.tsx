@@ -5,23 +5,27 @@ interface DishProps {
     name: string;
     ingredients: string;
     price: number;
-    icon?: string;
+    icons?: string[];
 
 }
-function DishCard({ image, name, ingredients, price, icon }: DishProps) {
+function DishCard({ image, name, ingredients, price, icons }: DishProps) {
     return (
         <div className={`${styles.card}`}>
             <img src={image} alt={name} className={styles.cardImage} />
             <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>{name}</h3>
-                <div className={styles.iconContainer}>
-                    <img
-                        key={icon}
-                        src={`/assets/icons/${icon}.svg`}
-                        className={styles.dishIcon}
-                        alt={`${icon} icon`}
-                    />
-                </div>
+                {icons && icons.length > 0 && (
+                    <div className={styles.iconContainer}>
+                        {icons.map((icon) => (
+                            <img
+                                key={icon}
+                                src={`/assets/icons/${icon}.svg`}
+                                className={styles.dishIcon}
+                                alt={`${icon} icon`}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
             <p className={styles.cardIngredients}>{ingredients}</p>
             <div className={styles.footer}>

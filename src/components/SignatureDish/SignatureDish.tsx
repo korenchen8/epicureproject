@@ -16,7 +16,7 @@ function SignatureDish() {
                         name={dish.name}
                         ingredients={dish.ingredients}
                         price={dish.price}
-                        icon={dish.icon}
+                        icons={dish.icons}
                     />
                 ))}
             </div>

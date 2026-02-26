@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero'
 import IconMeaning from './components/IconMeaning/IconMeaning';
 import PopularRestaurants from './components/PopularRestaurants/PopularRestaurants'
 import SignatureDish from './components/SignatureDish/SignatureDish';
+import ChefSection from './components/ChefSection/ChefSection';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
       <PopularRestaurants />
       <SignatureDish />
       <IconMeaning />
+      <ChefSection />
     </div>
   );
   
