@@ -1,0 +1,63 @@
+.popularRestaurantsContainer {
+    padding-top: 80px;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+    top: 840px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto
+}
+.sectionLabel {
+  width: 1440px;
+  height: 35px;
+  top:367px;
+  left: 20px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  color: var(--black);
+  line-height: 35px;
+    text-transform: uppercase;
+  letter-spacing: 1.25px;
+  text-align: center;
+ 
+  
+}
+.cardsWrapper {
+    width: 1185px;
+    height: 480px;
+  display: flex; 
+  justify-content: flex-start;
+  padding: 20px 40px 40px 40px;
+  gap: 32px;
+  width: 100%;
+  overflow-x: auto; 
+  padding-bottom: 20px; 
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  margin: 0 auto
+
+}
+
+.cardsWrapper::-webkit-scrollbar {
+  display: none;
+}
+.allRestaurantsButton{
+    align-self: flex-end;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 2px;
+    width: 226px;
+    height: 35px;
+    gap: 12px;
+    text-decoration: none;
+  display: flex;
+  align-items: center;
+    background-color: transparent;
+    border: none;
+}

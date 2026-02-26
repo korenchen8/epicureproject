@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 379px; 
+  background-color: var(--light-beige);
+
+
+}
+.cardImage {
+  width: 379px;
+  height: 236px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 24px;
+  align-items: center;
+
+}
+
+.cardTitle {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 2.67px;
+
+}
+
+.cardChef {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 1.97px;
+}
+.star {
+  width: 40px;
+  height: 40px;
+}

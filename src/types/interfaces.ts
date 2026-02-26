@@ -4,16 +4,16 @@ export interface IDish {
   ingredients: string;
   price: number;
   image: string;
-  icon?: 'spicy' | 'vegetarian' | 'vegan';
+  icons?: ('spicy' | 'vegetarian' | 'vegan')[];
 }
 
 export interface IRestaurant {
   id: string;
   name: string;
   chef: string;
-  rating: number; 
+  rating: number;
   image: string;
-  dishes: string[]; 
+  dishes: string[];
   isPopular?: boolean;
 }
 
@@ -22,6 +22,6 @@ export interface IChef {
   name: string;
   description: string;
   image: string;
-  restaurantIds: string[]; 
+  restaurantIds: string[];
   isChefOfTheWeek?: boolean;
 }
