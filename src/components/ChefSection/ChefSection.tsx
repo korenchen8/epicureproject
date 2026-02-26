@@ -49,6 +49,9 @@ function ChefSection() {
             />
           ))}
         </div>
+        <button className={styles.allRestaurantsButton}>
+      {ChefSectionStrings.CHEF_BUTTON_LABEL}
+    </button>
       </div>
     </section>
   );
