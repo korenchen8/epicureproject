@@ -6,6 +6,7 @@ import IconMeaning from './components/IconMeaning/IconMeaning';
 import PopularRestaurants from './components/PopularRestaurants/PopularRestaurants'
 import SignatureDish from './components/SignatureDish/SignatureDish';
 import ChefSection from './components/ChefSection/ChefSection';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
       <SignatureDish />
       <IconMeaning />
       <ChefSection />
+      <AboutUs />
     </div>
   );
   
