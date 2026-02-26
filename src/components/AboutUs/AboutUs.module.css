@@ -1,5 +1,6 @@
 
- .container {
+
+.container {
   background-color: var(--off-white);
   padding: 40px 20px;
   width: 100%;
@@ -9,49 +10,47 @@
 
 .content {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
   gap: 32px;
 }
 
+.desktopTextGroup {
+  display: contents; 
+}
 
 .logoSide {
   order: 1; 
-  width: 100%;
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 .bigLogo {
-  width: 102px; 
+  width: 102px;
   height: auto;
-  display: block;
 }
 
 .buttonContainer {
   order: 2; 
   display: flex;
-  flex-direction: row; 
+  flex-direction: column; 
   gap: 16px;
-  width: 100%;
+  align-items: flex-start;
 }
 
 .storeButton {
-  height: 30px; 
+  height: 35px;
   width: auto;
+  object-fit: contain;
 }
 
 .textSide {
   order: 3; 
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .title {
-  display: none; 
+
   font-family: "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-weight: 200;
@@ -62,68 +61,58 @@
 .description {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.4;
   font-weight: 200;
-  color: #000000;
-  margin: 0;
-  white-space: pre-line;
-  text-align: left;
+  margin-bottom: 20px;
 }
 
 
 @media (min-width: 1024px) {
-  .container {
-    padding: 80px 0;
-  }
-
   .content {
-    flex-direction: row; 
-    padding: 0 80px;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 80px;
   }
 
-  .textSide {
-    order: 1; 
+  .desktopTextGroup {
+    display: flex; 
+    flex-direction: column;
+    order: 1;
     flex: 1;
     max-width: 600px;
   }
 
+  .textSide {
+    order: unset; 
+  }
+
   .title {
-    display: block; 
+    display: block;
     font-size: 30px;
-    letter-spacing: 2.14px;
+    text-transform: uppercase;
     margin-bottom: 24px;
+    letter-spacing: 2px;
   }
 
   .description {
     font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 30px;
+    line-height: 1.5;
   }
 
   .buttonContainer {
-    order: 2; 
-    width: 376px;
+    order: unset; 
+    flex-direction: row; 
     height: 52px;
-  }
-
-  .storeButton {
-    height: 100%;
+    margin-top: 10px;
   }
 
   .logoSide {
-    order: 3; 
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center; 
-    margin-top: 120px;
-
+    order: 2; 
+    margin-top: 80px;
   }
 
   .bigLogo {
-    width: 178px; 
-    height: auto;
-    display: block;
+    width: 178px;
   }
 }
