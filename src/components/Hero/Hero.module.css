@@ -10,9 +10,8 @@
 }
 
 .searchWrapper {
+  position: relative;
   background-color: #FFFFFFE0;
-  top: 111px;
-  left: 20px;;
   padding: 36px 20px;
   width: 335px;
   height: 144px;
@@ -62,8 +61,9 @@
 }
 .resultsDropdown {
   position: absolute;
-  top: 246px;
-  left: 38px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 315px;
   background-color: #FFFFFF;
   padding: 20px 24px;
@@ -106,8 +106,6 @@
   .searchWrapper {
     width: 776px;
     height: 221px;
-    top: 300px;
-    left:332px;
     padding: 36px 126px 36px 126px;
     gap: 18px;
     background-color: #FFFFFFE0;
@@ -140,8 +138,6 @@
 
   .resultsDropdown {
     width: 504px;
-    top: 495px;
-    left:504px;
     background-color: #FFFFFF;
   }
   .searchIcon {
