@@ -64,13 +64,20 @@
     font-weight: 200;
     text-align: justify;
 }
+.lowerContent {
+    padding-left: 60px;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    text-align: justify;
+}
 
 .subTitle {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 24px;
     font-weight: 200;
     margin-bottom: 40px;
-    text-transform: uppercase;
+    text-align: left;
 }
 
 .restaurantsGrid {

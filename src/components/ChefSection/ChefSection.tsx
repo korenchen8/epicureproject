@@ -31,7 +31,7 @@ function ChefSection() {
       </div>
 
       <div className={styles.lowerContent}>
-        <h3 className={styles.subTitle}>{chefOfTheWeek.name.split(' ')[0]}'s Restaurants</h3>
+        <h3 className={styles.subTitle}>{chefOfTheWeek.name.split(' ')[0]}{ChefSectionStrings.CHEFS_RESTAURANTS}</h3>
         <div className={styles.restaurantsGrid}>
           {chefRestaurants.map((res) => (
             <RestaurantCard 
@@ -40,6 +40,7 @@ function ChefSection() {
               name={res.name}
               chef={res.chef}
               rating={res.rating}
+              isChefSection={true}
             />
           ))}
         </div>
