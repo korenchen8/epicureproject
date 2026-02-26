@@ -1,19 +1,21 @@
-.container {
+
+ .container {
   background-color: #ffffff;
-  padding: 40px 0;
+  padding: 40px 20px;
   border-top: 1px solid #f2f2f2;
   width: 100%;
 }
 
 .linkList {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 40px; 
+  align-items: flex-start; 
+  gap: 24px; 
 }
 
 .link {
-    font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   text-decoration: none;
   color: #000000;
   font-size: 18px;
@@ -26,3 +28,15 @@
 }
 
 
+@media (min-width: 1024px) {
+  .container {
+    padding: 40px 0;
+  }
+
+  .linkList {
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+  }
+}
