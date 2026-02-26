@@ -1,0 +1,152 @@
+.heroContainer {
+  height: 273px;
+  width: 100%;
+  background-image: url('/assets/hero/Hero.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchWrapper {
+  background-color: #FFFFFFE0;
+  top: 111px;
+  left: 20px;;
+  padding: 36px 20px;
+  width: 335px;
+  height: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+  
+}
+.heroText {
+  font-family: "Helvetica Neue";
+  font-style: thin;
+  width: 315px;
+  height: 64px;
+  font-size: 22px;
+  font-weight: 200; 
+  line-height: 32px;
+  letter-spacing: 1.97px;
+  color: var(--black);
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  width: 315px;
+  height: 30px;
+  border: 0.5px solid var(--black);
+  padding: 6px 12px 6px 12px;
+  border-radius: 4px;
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  width: 100%;
+  outline: none;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+.resultsDropdown {
+  position: absolute;
+  top: 246px;
+  left: 38px;
+  width: 315px;
+  background-color: #FFFFFF;
+  padding: 20px 24px;
+  text-align: center;
+  z-index: 10;
+}
+
+.sectionLabel {
+  display: block;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: var(--grey);
+  margin-bottom: 12px;
+  letter-spacing: 1.25px;
+}
+
+.resultItem {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400; 
+  font-size: 16px;
+  color: var(--black);
+  margin-bottom: 16px;
+  cursor: pointer;
+  padding-left: 4px;
+}
+
+.resultItem:last-child {
+  margin-bottom: 24px;
+}
+
+
+@media (min-width: 1024px) {
+  .heroContainer {
+    height: 696px; 
+    background-position: center;
+    background-color: #FFFFFFE0;
+  }
+
+  .searchWrapper {
+    width: 776px;
+    height: 221px;
+    top: 300px;
+    left:332px;
+    padding: 36px 126px 36px 126px;
+    gap: 18px;
+    background-color: #FFFFFFE0;
+  }
+
+  .heroText {
+    width: 402px;
+    height: 80px;
+    font-size: 30px; 
+    line-height: 40px;
+    max-width: 450px;
+    font-weight: 200;
+    letter-spacing: 1.97px; 
+  }
+
+  .inputContainer {
+    width: 505px;
+    height: 48px;
+    border-radius: 4px;
+    border: 0.5px solid var(--black);
+    padding: 6px 12px 6px 12px;
+    gap: 16px;
+
+  }
+
+  .searchInput {
+    font-size: 24px;
+    letter-spacing: 1.29px;
+  }
+
+  .resultsDropdown {
+    width: 504px;
+    top: 495px;
+    left:504px;
+    background-color: #FFFFFF;
+  }
+  .searchIcon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+}
