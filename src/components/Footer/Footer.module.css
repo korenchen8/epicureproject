@@ -1,0 +1,28 @@
+.container {
+  background-color: #ffffff;
+  padding: 40px 0;
+  border-top: 1px solid #f2f2f2;
+  width: 100%;
+}
+
+.linkList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+}
+
+.link {
+    font-family: "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1.92px;
+}
+
+.link:hover {
+  color: #979797; 
+}
+
+
