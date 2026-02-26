@@ -1,0 +1,91 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  background-color: var(--light-beige);
+  text-align: center;
+  align-items: center;
+
+
+}
+.cardImage {
+  width: 380px;
+  height: 306px;
+  object-fit: cover;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 24px;
+  align-items: center;
+  text-align: center;      
+}
+
+.cardTitle {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 2.67px;
+
+}
+
+.cardIngredients {
+  font-family: "Helvetica Neue", sans-serif;
+  width: 295px;
+  height: 123px;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 1.97px;
+  align-items: center;
+  text-align: center;
+}
+.iconContainer {
+  display: flex;
+  gap: 8px;
+  justify-content: center; 
+  margin-top: 8px;
+  height: 24px; 
+}
+
+.dishIcon {
+  width: 40px;
+  height: 31px;
+  object-fit: contain;
+}
+ .footer {
+  margin-top: auto;
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%; 
+  height: 1px;
+  background-color: #979797;
+  z-index: 1;
+}
+
+.price {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  position: relative;
+  z-index: 2; 
+  background-color: var(--light-beige);
+  padding: 0 10px; 
+  padding-bottom: 10px;
+}
+.currency {
+  font-weight: 100;
+}

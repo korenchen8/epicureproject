@@ -8,7 +8,7 @@ export const mockDishes: IDish[] = [
     ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
     price: 88,
     image: "/assets/dishes/padkimao.svg",
-    icon: "spicy",
+    icons: ['spicy'],
   },
   {
     id: "d2",
@@ -16,7 +16,7 @@ export const mockDishes: IDish[] = [
     ingredients: "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
     price: 98,
     image: "/assets/dishes/garbazano.svg",
-    icon: "spicy",
+    icons: ['spicy'],
   },
   {
     id: "d3",
@@ -24,7 +24,7 @@ export const mockDishes: IDish[] = [
     ingredients: "Basil dough, cashew butter, demi-glace, bison& radish",
     price: 65,
     image: "/assets/dishes/smokedpizza.svg",
-    icon: "vegan",
+    icons: ['vegan'],
   },
 ];
 
@@ -81,7 +81,7 @@ export const mockRestaurants: IRestaurant[] = [
     rating: 4,
     image: "/assets/restaurants/mashya.svg",
     dishes: ["d3"],
-    isPopular: true,
+    isPopular: false,
   },
 ];
 
