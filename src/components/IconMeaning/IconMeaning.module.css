@@ -1,36 +1,34 @@
-.container {
+
+ .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 120px; 
-    width: 1440px;
+    margin-top: 40px; 
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 60px 0; 
-    
+    padding: 40px 20px; 
     background-color: var(--off-white);
-    
 }
 
 .title {
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 30px;
+    font-size: 18px; 
     font-weight: 200;
-    letter-spacing: 2.14px;
-    line-height: 35px;
+    letter-spacing: 1.25px;
+    line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
-    margin: 0;
+    margin-bottom: 30px;
 }
 
 .iconsWrapper {
-    padding-top: 40px;
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap: 30px;
     justify-content: center;
-
+    align-items: center;
+    
 }
 
 .iconItem {
@@ -38,21 +36,33 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
-
+    flex: 1 1 100px; 
 }
 
 .iconImg {
-    width: 77.42px;
-    height: 60px;
+    width: 50px;
+    height: auto;
     object-fit: contain;
 }
 
 .iconLabel {
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 24px;
+    font-size: 16px; 
     font-weight: 200;
-    line-height: 30px;
-    letter-spacing: 1.97px;
+    line-height: 1.2;
     text-align: center;
+}
 
+
+@media (min-width: 1024px) {
+    .container { margin-top: 120px; padding: 60px 0; }
+    .title { font-size: 30px; letter-spacing: 2.14px; }
+    .iconsWrapper { 
+        gap: 40px; 
+        flex-direction: row;
+        padding-top: 40px; 
+        flex-wrap: nowrap; 
+    }
+    .iconImg { width: 77px; }
+    .iconLabel { font-size: 24px; letter-spacing: 1.97px; }
 }

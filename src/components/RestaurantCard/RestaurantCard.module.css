@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  align-items: center;
+  align-items: left;
 }
 
 .cardTitle {
@@ -41,6 +41,7 @@
 
 @media (min-width: 1024px) {
   .card { width: 379px; }
+  .cardContent{align-items: center;}
   .cardImage { height: 236px; }
   .cardTitle { font-size: 40px; }
   .cardChef { font-size: 24px; }

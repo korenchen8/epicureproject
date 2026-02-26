@@ -40,7 +40,7 @@
 }
 
 .allRestaurantsButton {
-  align-self: center;
+  align-self: flex-start;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -51,7 +51,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 @media (min-width: 1024px) {
@@ -62,5 +62,6 @@
     overflow-x: auto; 
     gap: 32px;
    }
-  .allRestaurantsButton { align-self: flex-end; font-size: 24px; margin-right: 20px; }
+  .allRestaurantsButton { align-self: flex-end; font-size: 24px;margin-right: 40px; 
+        padding-left: 0; }
 }
