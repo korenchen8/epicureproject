@@ -2,10 +2,10 @@
   width: 100%;
   padding: 12px 0;
   border-bottom: 1px solid var(--off-white);
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1000;
-  background-color: var(--off-white);
+  background-color: var(--white);
 }
 
 .headerContent {
@@ -15,29 +15,33 @@
   padding: 0 20px;
 }
 
-
-.leftSection, .logoSection, .rightSection {
-  flex: 1;
+.leftSection {
   display: flex;
   align-items: center;
+  flex: 1;
 }
 
 .logoSection {
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
 }
 
 .rightSection {
-  justify-content: flex-end;
-  gap: 20px;
-}
-.iconBtn {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 12px;
+}
+
+.desktopNav,
+.logoText,
+.desktopSearch {
+  display: none;
 }
 
 .logo {
@@ -50,15 +54,17 @@
   height: 20px;
 }
 
-.hamburgerBtn {
+.hamburgerBtn,
+.iconBtn {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-
-.mobileMenu{
+.mobileMenu {
   position: fixed;
   top: 0;
   left: 0;
@@ -75,14 +81,14 @@
   align-self: flex-start;
   background: none;
   border: none;
-  font-size: 24px;
-  margin-bottom: 40px;
+  padding: 10px 0;
   cursor: pointer;
 }
 
 .mobileMenu nav ul {
   list-style: none;
   padding: 0;
+  margin-top: 20px;
 }
 
 .mobileMenu nav li {
@@ -94,16 +100,79 @@
 }
 
 
-@media (min-width: 768px) {
-  .hamburgerBtn {
-    display: none; 
+@media (min-width: 1024px) {
+  .headerContainer {
+    border-bottom: 1px solid var(--off-white);
+    height: 64px;
+    padding: 0 40px;
+    justify-content: space-between;
+    position: static;
+    background-color: var(--off-white);
   }
 
-  .headerContainer {
-    padding: 20px 40px;
+  .leftSection {
+    gap: 32px;
   }
+
+  .logoSection {
+    position: static;
+    transform: none;
+    left: auto;
+    margin-right: 32px;
+  }
+
+  .hamburgerBtn {
+    display: none;
+  }
+
+  .iconBtn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+
+  }
+
+  .logoSection {
+    margin-right: 32px;
+    margin-top: 14px;
+  }
+
+  .logoText {
+    display: inline;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    color: var(--black);
+  }
+
+  .desktopNav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .navLink {
+    margin-top: 14px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 1.92px;
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
 
   .logo {
     height: 32px;
+  }
+
+  .rightSection {
+    gap: 16px;
   }
 }

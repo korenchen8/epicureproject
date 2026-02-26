@@ -28,6 +28,7 @@ width: 1440px;
 
 
 .cardsWrapper {
+    margin-top: 80px;
     width: 1185px;
     height: 480px;
   display: flex; 
